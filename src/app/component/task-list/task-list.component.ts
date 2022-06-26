@@ -10,7 +10,6 @@ import { ServiceTaskService } from 'src/app/service-task.service';
 })
 export class TaskListComponent implements OnInit {
   tasks:Task[]= [];
-  fatimes=faTimes;
   
 
   constructor(
