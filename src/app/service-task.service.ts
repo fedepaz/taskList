@@ -1,17 +1,21 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { TASKS } from 'src/app/mock-tasks';
 import { Task } from 'src/app/Task';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServiceTaskService {
+  private apiUrl= 'http://localhost:5000/tasks';
 
-  constructor() { }
+  constructor(
+    private http:HttpClient
+
+
+  ) { }
 
   getTasks():Observable<Task[]>{
-    const tasks = of(TASKS);
-    return tasks;
+    return this.http.get<Task[]>(this.apiUrl);  
   }
 }
