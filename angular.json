@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "taskList"
+  "defaultProject": "taskList",
+  "cli": {
+    "analytics": false
+  }
 }
