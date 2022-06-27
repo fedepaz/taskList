@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Task } from 'src/app/Task';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { ServiceTaskService } from 'src/app/service-task.service';
 
 @Component({
@@ -22,5 +21,12 @@ export class TaskListComponent implements OnInit {
       this.tasks= tasks
     })
   }
+
+  deleteTask(task:Task){
+    this.taskService.deleteTask(task)
+    .subscribe(()=>{
+      this.tasks = this.tasks.filter((t)=>t.id!==task.id) 
+    })
+    }
 
 }
