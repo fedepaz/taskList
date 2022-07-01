@@ -4,25 +4,25 @@
       "id": 1,
       "text": "Nuestro primer modulo de angular",
       "day": "Agosto 5 a las 12 del Mediodía",
-      "reminder": true
-  },
+      "reminder": false
+    },
     {
       "id": 2,
       "text": "Terminar la tarea",
       "day": "Hoy porque sino se pide por PedidosYa",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 3,
       "text": "Investigar alguna estupidez",
       "day": "Antes del domingo, sunday night football",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 4,
-      "text": "Ver la peli",
-      "day": "Hoy",
-      "reminder": true
+      "text": "Ver peli",
+      "day": "Tipo 10...",
+      "reminder": false
     }
   ]
 }
