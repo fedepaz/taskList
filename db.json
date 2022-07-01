@@ -29,6 +29,12 @@
       "day": "Viernes 1600hs",
       "reminder": true,
       "id": 5
+    },
+    {
+      "text": "Ir a ver a los pibes",
+      "day": "Hoy a las 21:00hs",
+      "reminder": true,
+      "id": 6
     }
   ]
 }
